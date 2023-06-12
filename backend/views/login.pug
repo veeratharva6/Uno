@@ -1,0 +1,44 @@
+extends auth-layout
+
+
+block content
+    head 
+    link(rel='stylesheet' href='/stylesheets/login.css')
+    
+    div.container
+      h1.h1 LOGIN
+      form(id="signin-form-id" onsubmit="signin(); return false;")
+        label
+          e USERNAME  
+          input(name='username' type = 'username' autocomplete='username' placeholder='Username')
+        label
+          e EMAIL  
+          input(name='emailAddress' type = 'emailAdd' autocomplete='email' placeholder='Email address')
+        label
+          e PASSWORD  
+          input(name='password' type='password' autocomplete='new-password' placeholder='Password')
+        input.register__btn(type='submit' value='Login')      
+
+
+
+
+
+
+//- div(class = "container")
+//-       form(id="signin-form-id" onsubmit="signin(); return false;")
+//-         <label><b>Username</b></label>
+//-         <b><input type="text" placeholder="Enter Username" name="username" required></b>
+
+//-         <label><b>Email Address</b></label>
+//-         <b><input type="text" placeholder="Enter Email" name="email" required></b>
+
+//-         <label><b>Password</b></label>
+//-         <input type="password" placeholder="Enter Password" name="psw" required>
+            
+//-         <button type="submit" onsubmit = signin()>Login</button>
+//-         </label>
+
+//-     div(class = "container" style = "background-color:#f1f1f1")
+//-       <button type="button" class="cancelbtn">Cancel</button>
+//-       <span class="psw">Forgot <a href="#">password?</a></span>
+

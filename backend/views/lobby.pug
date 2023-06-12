@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  head 
+    link(rel='stylesheet' href='/stylesheets/lobby.css')
+    script(src='/scripts/lobby.js', defer)
+
+
+  div(class="title-container")
+    h1 Lobby
+    if user_name
+      h2 Welcome #{user_name}
+
+  div(class="list-container")
+    div(class="chat-list-container")
+      h1 Chat
+      div(class="chat-list" id="chat-list-id")
+      div(class="chat-form-container")
+        form(id="send-chat-form-id" class="msg-form" onsubmit="sendMessage(); return false;")
+          e Message
+          input(type='text' class="msg-input" name="message" required)
+          input(type='submit' class="msg-btn" value='Send')  
+    div(class="game-list-container")
+      h1 Games List
+      div(class="game-list" id="games-list-id")
+      div(class="game-form-container")
+        form(id="create-game-form-id" class="game-form" onsubmit="createGame(); return false;")
+          div.game-form-row
+            label(for="gametitle") Game Title
+            input(class="msg-input" name='gametitle' placeholder='game title' required)
+          div.game-form-row
+            label(for="count") Number of Players
+            input(class="msg-input" name='count' type="number" placeholder='Number of players' required)
+          input(class="submit-game-form-btn" type='submit' value='Create')  
+      
+      
+          
+
+
+

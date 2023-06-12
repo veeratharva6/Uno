@@ -1,0 +1,76 @@
+extends auth-layout
+
+block content
+    head 
+    link(rel='stylesheet' href='/stylesheets/login.css')
+    
+    div.container
+      h1.h1 REGISTER
+      form(id="signin-form-id" onsubmit="register(); return false;")
+        label
+          e USERNAME  
+          input(name='username' type = 'username' autocomplete='username' placeholder='Username')
+        label
+          e EMAIL  
+          input(name='emailAddress' type = 'emailAdd' autocomplete='email' placeholder='Email address')
+        label
+          e PASSWORD  
+          input(name='password' type='password' autocomplete='new-password' placeholder='Password')
+        input.register__btn(type='submit' value='Register')      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //- div.register
+    //-   div.register__container
+    //-     h1 REGISTER
+    //-     form(id="register-form-id" onsubmit="register(); return false;")
+    //-       label
+    //-       div.register__textBox
+    //-         em Username  
+    //-         input(name='username' autocomplete='username' placeholder='Username')
+    //-       label
+    //-       div.register__textBox
+    //-         em Email  
+    //-         input(name='email' autocomplete='email' placeholder='Email address')
+    //-       label
+    //-       div.register__textBox
+    //-         em Password  
+    //-         input(name='password' type='password' autocomplete='new-password')
+    //-       input.register__btn(type='submit' value='Register')         
+
+    

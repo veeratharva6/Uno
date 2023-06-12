@@ -1,0 +1,106 @@
+/* Register */
+
+body {
+  background-color: #f16464;
+}
+
+.home {
+  padding-top: 10%;
+  text-align: center;
+
+  /* display: inline; */
+}
+
+.btn {
+  background-color: #4ca8af; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #095d63;
+}
+
+.register {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #c6c9c8;
+  padding: 40px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.register__textBox {
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.register__btn {
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: rgb(248, 194, 78);
+  cursor: pointer;
+}
+.register__google {
+  background-color: #4285f4;
+}
+.register div {
+  margin-top: 7px;
+}
+
+/* Navbar */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #04aa6d;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}

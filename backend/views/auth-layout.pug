@@ -1,0 +1,11 @@
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/stylesheets/home.css')
+    script(src='/scripts/bundle.js')
+  body
+    include navbar
+    h3(id="msg-id" style="color: yellow; padding: 10px; text-align: center;")
+    block content
+    
+    

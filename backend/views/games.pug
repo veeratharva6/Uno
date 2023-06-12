@@ -1,0 +1,59 @@
+extend layout 
+
+block content
+  head 
+    link(rel='stylesheet' href='/stylesheets/game.css')
+    script(src='/scripts/game.js', defer)
+
+  //- Heading
+  div(class = "h1")
+    h1 Game Room #{id}
+
+  input(class="quit-btn" id="quit-btn-id" type='button' value='Quit' onclick="saveGameState()")
+  input(class="quit-btn" id="quit-btn-id" type='button' value='Start Game' onclick="initCards()")
+
+  h3(id="num-of-players-id" class="num-players") Number of Players: 
+
+  //- Gameplay screen
+  div(class='pile-container')
+    div(class="deck-container")
+      div(class='deck')
+        h3 Deck
+        img(id="deck-img-id" src='', alt='Deck' height="135px" width="100px")
+      input(class="draw-btn" type='button' value='Draw' onclick= "drawCard()")
+
+    div(class="discard-container")
+      div(class='discard-pile')
+      h3 Discard Pile
+      img(id="discard-img-id" src='', alt='Discard Pile' height="135px" width="100px")
+
+  div(class="call-uno-container" id="call-uno-container-id")
+    h3(id="call-uno-msg-id")
+
+  h3(id="game-msg-id" style="color: yellow; padding: 10px;")
+  h3(id="current-player-name-id" style="color: green; padding: 10px;")
+
+  //- Hands
+  div(class="game-container")
+    div(class="game-cards-container" )
+      h1 Hands
+      div(class="game-cards")
+        div(id='player-hand-parent-id')
+          h3 Player:  
+
+        div(id='opponents-hand-parent-id')
+          h3 Opponents: 
+
+    //- Chatbox
+    div(class="chat-list-container")
+      h1 Chat
+      div(class="chat-form-container")
+        form(id="send-chat-form-id" class="msg-form" onsubmit="sendMessage(); return false;")
+          input(type='text' class="msg-input" name="message" required)
+          input(type='submit' class="msg-btn" value='Send')  
+        div(class="chat-list" id="chat-list-id")
+      
+
+
+      
+

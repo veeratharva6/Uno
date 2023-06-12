@@ -1,0 +1,112 @@
+.title-container {
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+.game-list-container {
+  display: block;
+  border: 2px solid #c6c9c8;
+  padding: 10px;
+  width: 50%;
+}
+
+.chat-list-container {
+  display: block;
+  border: 2px solid #c6c9c8;
+  padding: 10px;
+  width: 50%;
+}
+
+.game-list {
+  border: 2px solid white;
+  width: 100%;
+  height: 200px;
+  overflow-y: auto;
+  font-size: 20px;
+}
+
+.chat-list {
+  border: 2px solid white;
+  width: 100%;
+  height: 200px;
+  overflow-y: auto;
+  font-size: 20px;
+}
+
+.game-form-container {
+  max-height: 300px;
+  max-width: 100%;
+  text-align: left;
+  padding: 10px;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  font-size: 20px;
+}
+
+.game-form-row {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.game-form {
+  display: block;
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+.chat-form-container {
+  max-width: 100%;
+}
+.message {
+  background-color: rgb(59, 245, 149);
+  margin-bottom: 1px;
+}
+
+.game {
+  background-color: rgb(139, 246, 210);
+  margin-bottom: 1px;
+}
+
+.game-room-link:hover {
+  color: rgb(255, 0, 179);
+}
+
+.msg-form {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.msg-input {
+  width: 50%;
+  height: 30px;
+}
+
+.msg-btn {
+  color: white;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(127, 148, 255);
+}
+
+.msg-btn:hover {
+  background-color: rgb(1, 31, 180);
+}
+
+.submit-game-form-btn {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #4ca8af;
+}
+
+.submit-game-form-btn:hover {
+  background-color: #095d63;
+}

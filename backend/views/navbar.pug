@@ -1,0 +1,24 @@
+head
+   script(src='/scripts/auth.js', defer)
+    link(rel='stylesheet' href='/stylesheets/home.css')
+ul.topnav
+    if user_id
+        li  
+            a(href='/') UNO
+        li
+            a(href='/') Home
+        li
+            a(href='/lobby') Lobby
+        li.right
+            a(href='/' onclick="signout()") Sign-out
+            
+    else
+        li  
+            a(href='/') UNO
+        li
+            a(href='/') Home
+        li.right
+            a(href='/authentication/login') Login
+        li.right
+            a(href='/authentication/register') Sign-up 
+        
